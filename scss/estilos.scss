@@ -1,0 +1,196 @@
+html, body{
+    width:100%;
+    overflow-x:hidden;
+    }
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 300px){
+body{
+    background-color: beige;
+    flex-wrap: wrap;
+    background-position: center center;
+   
+}
+}
+
+header{
+    display: flex;
+    min-height: 155px;
+    margin-top: auto;
+    background-color: rgb(107, 30, 30);
+    align-items: center;
+    padding: 10px;
+    font-family:'Open Sans', sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0 px;
+    }
+}
+
+.equipamiento-titulo{
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    background-color: beige;
+    font-size: clamp(2em, 2vw, 5em);
+    text-align: left;
+    padding: 2%;
+    margin-right: 50%;
+    color: black;
+    text-decoration: underline;
+}
+.equipamiento-nivel{
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    background-color: beige;
+    font-size: clamp(2em, 1vw, 5em);
+    text-align: left;
+    padding: 2%;
+    margin-right: 50%;
+    color: black;
+}
+
+.personal-titulo{
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    background-color: beige;
+    font-size: clamp(2em, 2vw, 5em);
+    text-align: right;
+    padding: 2%;
+    margin-left: 50%;
+    color: black;
+    text-decoration: underline;
+}
+
+.personal-capacitado{
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    background-color: beige;
+    font-size: clamp(2em, 1vw, 5em);
+    text-align: right;
+    padding: 2%;
+    margin-left: 50%;
+    color: black;
+    min-height: calc(100vs - 100px - 300px)
+}
+.nombre_empresa{
+
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-style: inherit;
+    
+}
+.presentacion{
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    background-color: beige;
+    font-size: clamp(2em, 1vw, 5em);
+    text-align: left;
+    padding: 2%;
+    color: black;
+}
+.frente_pochy{
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    background-color: beige;
+    font-size: clamp(2em, 1vw, 5em);
+    text-align: left;
+    padding: 2%;
+    color: black;
+}
+.img-frente{
+    width: 100%;
+    border-radius:15px;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
+.info_arenado{
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    background-color: beige;
+    font-size: clamp(2em, 1vw, 5em);
+    text-align: left;
+    padding: 2%;
+    color: black;
+}
+.img_arenado{
+width: 75vw;
+max-width: 1000px;
+min-width: 320px;
+margin: auto;
+}
+.img-arena{
+    width: 100%;
+    border-radius:15px;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
+@media (max-width: 767px) {
+    form {
+      max-width: 100%; /* Hace que el formulario ocupe todo el ancho de la pantalla en dispositivos móviles */
+      padding: 10px; /* Ajusta el espaciado interior del formulario para dispositivos móviles */
+    }
+}
+.formulario{
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 10%;
+    padding: 5%;
+    width: 50vh;
+    background-color: beige;
+}
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Establece la altura del mapa según tus necesidades */
+  }
+  
+  #map {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+  }
+  
+  /* Media Queries para hacer el mapa responsive */
+  
+  @media screen and (min-width: 768px) {
+    .map-container {
+      position: absolute;
+      top: 20%;
+      right: 20%;
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .map-container {
+      position: static;
+    }
+  }
+
+    footer {
+        color: white;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px; /* Ajusta la altura del footer según tus necesidades */
+        background-color: #881010; /* Color de fondo del footer */
+      }
